@@ -4,6 +4,6 @@ const { protectAuth } = require("../middlewares/protectAuth.MW");
 
 const router = express.Router();
 
-// router.get("/", protectAuth, allUsers);
+router.get("/", protectAuth, allUsers);
 
 module.exports = router;
